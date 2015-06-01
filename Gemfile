@@ -4,8 +4,12 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use Postgres as the database for Active Record because that's what Heroku likes
-gem 'sqlite3', group: :devel
-gem 'pg', group: :production
+group :development, :test do # <<<< :development, not devlopment
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
