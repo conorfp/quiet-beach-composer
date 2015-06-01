@@ -115,6 +115,8 @@ end
 # AABAB
 # ABACBAA
 
-@song_result = "This one is in #{@time_signature} at #{@tempo} BPM in the key of #{@key} #{@key_quality}.\nThe notes are #{@key_notes.join(", ")}.\nThe progression goes #{@progression.keys}, or #{@progression.values.join("-")}."
+@song_a = "This one is in #{@time_signature} at #{@tempo} BPM in the key of #{@key} #{@key_quality}."
+@song_b = "The notes are #{@key_notes.join(", ")}."
+@song_c = "The progression goes #{@progression.keys}, or #{@progression.values.join("-")}.</p>"
   end
 end
