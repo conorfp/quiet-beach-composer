@@ -117,6 +117,6 @@ end
 
 @song_a = "This one is in #{@time_signature} at #{@tempo} BPM in the key of #{@key} #{@key_quality}."
 @song_b = "The notes are #{@key_notes.join(", ")}."
-@song_c = "The progression goes #{@progression.keys}, or #{@progression.values.join("-")}.</p>"
+@song_c = "The progression goes #{@progression.keys}, or #{@progression.values.join("-")}."
   end
 end
